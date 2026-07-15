@@ -1,0 +1,35 @@
+.Container{
+    display:flex;
+    flex-direction:column-reverse;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #bce8eb;
+    color: #31708f;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Box{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: #e6b5e0;
+    border: 1px solid #0c0c0c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Container1{
+    display:flex;
+    flex-direction:row-reverse;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #bce8eb;
+    color: #31708f;
+    justify-content: center;
+    align-items: center;
+
+}
