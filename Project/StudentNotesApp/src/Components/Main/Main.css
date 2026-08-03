@@ -1,0 +1,36 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main input {
+  padding: 15px;
+  background: #141320;
+  border: 1px solid #34314d;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.main input::placeholder {
+  color: #8a8a9d;
+}
+
+.main-btn {
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: #6d5dfc;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.main-btn:hover {
+  background: #5b4df0;
+}
