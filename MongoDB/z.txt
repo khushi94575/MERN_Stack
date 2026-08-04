@@ -1,0 +1,5 @@
+create product api
+method post
+Try catch
+validation check
+user check (exist or not in  db )
