@@ -195,9 +195,49 @@ try{
     })
   }
 
-  const upda
+  const updatedProduct = await Product.findByIdAndUpdate(
+      id,
+      req.body,
+      {
+        new: true
+      }
+    );
+
+    res.status(200).json({message:"product update successfully "})
 }
+catch(error){
+  console.error(error);
+    res.status(500).json({message:"unsuccessful Updation"})
+}
+
 })
+
+app.delete("/deleteProduct/:id", authMiddleware, async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    const product = await Product.findById(id);
+
+    if (!product) {
+      return res.status(404).json({
+        message: "Product not found",
+      });
+    }
+
+    await Product.findByIdAndDelete(id);
+
+    res.status(200).json({
+      message: "Product deleted successfully",
+    });
+
+  } catch (error) {
+    console.error(error);
+
+    res.status(500).json({
+      message: error.message,
+    });
+  }
+});
 connectDB();
 app.listen(3000, () => {
   console.log("Server is running");
