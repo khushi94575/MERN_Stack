@@ -1,8 +1,8 @@
 import "./App.css";
 
 import Header from "./components/Header/Header";
-import NoteInput from "./components/NoteInput/NoteInput";
-import NotesSection from "./Components/NotesSection/NoteInput";
+import NoteInput from "./components/NotesSection/NoteInput";
+import NotesSection from "./components/NoteSection/NotesInput";
 import Footer from "./components/Footer/Footer";
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <div className="container">
         <Header />
         <NoteInput />
-        <NotesSection />
+        <NoteInput/>
         <Footer />
       </div>
     </div>

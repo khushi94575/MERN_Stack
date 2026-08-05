@@ -227,7 +227,7 @@ app.delete("/deleteProduct/:id", authMiddleware, async (req, res) => {
     await Product.findByIdAndDelete(id);
 
     res.status(200).json({
-      message: "Product deleted successfully",
+      message: "Product deleted successful  ly",
     });
 
   } catch (error) {
