@@ -3,7 +3,7 @@ dns.setServers(["8.8.8.8", "8.8.4.4"]);
 
 const mongoose = require('mongoose');
 
-const url = 'mongodb+srv://kartiksharma2462092_db_user:Uco3WcLrmMAto8nV@cluster0.ekpjjkj.mongodb.net/Assignment1';
+const url = "mongodb+srv://khushi94575_db_user:GZsuzjROuQUf5xnv@cluster0.gbprybt.mongodb.net/Assignment2";
 
 const connectDB = async () => {
     try {
