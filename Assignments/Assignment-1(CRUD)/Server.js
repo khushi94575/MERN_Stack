@@ -4,6 +4,7 @@ const authMiddleware=require("./authMiddleware");
 const cookieParser = require("cookie-parser");  
 const jwt = require("jsonwebtoken");
 const connectDB = require("./db");
+
 const bcrypt = require("bcrypt");
 const mongoose = require("mongoose");
 const User = require("./Model/authModel");
