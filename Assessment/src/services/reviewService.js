@@ -38,8 +38,19 @@ const getReviews = async (queryParams) => {
     totalPages: Math.ceil(total / limit),
   };
 };
-
+const getSingleReviews=async(id)=>{
+  return await ReviewModel.findById(id);
+}
+const updateReview=async(id,data)=>{
+  return await ReviewModel.findByIdAndUpdate(id,data,{new:true});
+}
+const deleteReview=async(id,data)=>{
+  return await ReviewModel.findByIdAndDelete(id);
+}
 module.exports = {
   createReview,
   getReviews,
+  getSingleReviews,
+  updateReview,
+  deleteReview
 };
