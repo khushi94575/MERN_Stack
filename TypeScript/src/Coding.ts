@@ -39,13 +39,13 @@ interface interfaceproduct{
  
 type UpdateProductDto = Partial<Omit<interfaceproduct,'id'>>;
 type ProductPreview =Pick<interfaceproduct,'id'|'title'|'price'>;
-const productPreview: CreateProductDto = {
+// const productPreview: CreateProductDto = {
  
-  title: "Laptop",
-  price: 50000
-};
+//   title: "Laptop",
+//   price: 50000
+// };
 
-console.log(productPreview);
+// console.log(productPreview);
 
 //2nd
 
